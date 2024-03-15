@@ -10,7 +10,7 @@ function start_ws(handler = ws_handler){
 
     const url = new URL(location.href)
 
-    let websocket = new WebSocket("ws://" + url.host);
+    let websocket = new WebSocket("ws://localhost:8001");
     document.websocket = websocket
     websocket.binaryType = "arraybuffer";
     websocket.onopen = function(evt) { onOpen(evt) };
