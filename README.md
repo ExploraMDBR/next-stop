@@ -51,9 +51,6 @@ area, being visible from all the visitors.
 
 ![Project image](images/example.png)
 
-### Related Explora's project
-
-- [Il buono prima di tutto]()
 
 
 
