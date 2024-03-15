@@ -12,7 +12,7 @@
 
 
 ## <a name="introduction"></a>Introduction
-*Next stop explora* features a physical console that relies on **buttons** and **magnetic sensors** for users inputs and **displays and led strips as output**. The buttons and the sensors on the console are associated to typical actions to be performed as a train driver and influences what happens in the display and the leds behaviour.
+*Next stop* features a physical console that relies on **buttons** and **magnetic sensors** for users inputs and **displays and led strips as output**. The buttons and the sensors on the console are associated to typical actions to be performed as a train driver and influences what happens in the display and the leds behaviour.
 The displays feature both video (pre-rendered or a camera output) and images.
 
 
@@ -42,7 +42,7 @@ python3 treno_controller.py # prints localhost:8080 to console (port number is r
 ## <a name="infos"></a>Project additional infos
 
 ### Project purpose
-*Next stop explora* is designed to be an installation. A full size train cockpit features a display and a basic console.
+*Next stop* is designed to be an installation. A full size train cockpit features a display and a basic console.
  
 **Two versions** of the installation have been presented: 
 - The first one was displaying a video recorded in real time by a camera placed on topo of small toy train controlled through a reley and activated during “Running” state. The train rails were installed above the installation
