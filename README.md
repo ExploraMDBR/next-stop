@@ -32,7 +32,7 @@ git clone https://github.com/ExploraMDBR/next-stop.git
 pip install -i https://test.pypi.org/simple/ explora-display --extra-index-url https://pypi.org/simple
 
 # Start local server
-python3 main.py # prints localhost:8080 to console (port number is randomly generated each launch)
+python3 treno_controller.py # prints localhost:8080 to console (port number is randomly generated each launch)
 
 # The application is now running and can be accessed at localhost:8080
 ```
