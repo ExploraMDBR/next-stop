@@ -1,5 +1,5 @@
 from explora.hat import gpio_manager
-from explora.display import display_server
+import legacy_display_server
 
 import threading
 from time import sleep, time
@@ -13,7 +13,7 @@ state = len(STATE_STR) - 1 #IDLE
 TRENO_RUNNING_TIME = 4
 auto_control_running = False
 FLASH_OTHER_LEDS = False
-STATE_TIMEOUT = 10
+STATE_TIMEOUT = 1
 _last_state_change = time()
 _state_set_by_button = False
 _keep_watchdog = True
@@ -29,14 +29,14 @@ def timeout_state():
 			continue
 		
 		now = time()
-		# print("WATCHDOG INTERVAL", now - _last_state_change)
+		print("WATCHDOG INTERVAL", now - _last_state_change)
 		if now - _last_state_change > STATE_TIMEOUT:
 			_last_state_change = now
 			_state_set_by_button = False
 			state = len(STATE_STR) - 1 #IDLE
 			light_state_leds()
 			send_ws_state()
-			# print("WATCHDOG STATE CHANGE", state)
+			print("WATCHDOG STATE CHANGE", state)
 		
 watchdog_thread = threading.Thread(target = timeout_state)
 
@@ -44,7 +44,7 @@ def get_state(num):
 	return STATE_STR[num]
 
 def send_ws_state():
-	display_server.ws_server.send(display_server.ws_server.get_comm_json("treno button", get_state(state)))
+	display_server.ws_server.send(legacy_display_server.ws_server.get_comm_json("treno button", get_state(state)))
 
 def set_state(num_or_str):
 	global state
@@ -140,8 +140,9 @@ def move_state(num, the_led):
 
 
 if __name__ == '__main__':
-	display_server.main(_static_dir=("/", "./public"))
 	watchdog_thread.start()
+	
+	legacy_display_server.start()
 
 	for i in range(7):
 		btns.set_press_handler(i, move_state)
@@ -150,7 +151,7 @@ if __name__ == '__main__':
 		input("Press enter to end")
 	finally:
 		_keep_watchdog = False
-		display_server.stop()
+		legacy_display_server.stop()
 		watchdog_thread.join()
 		print("exit")
 	
