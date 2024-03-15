@@ -23,7 +23,7 @@ The displays feature both video (pre-rendered or a camera output) and images.
 - [legacy-display-server](https://github.com/ExploraMDBR/legacy-display-server)
 - [explora.hat](https://github.com/ExploraMDBR/explora-hat)
   
-jQuery dependency already comes with the repository (in `./public` folder). Just clone it and run `main.py` :
+jQuery dependency already comes with the repository (in `./public` folder).
 
 ```bash
 # Clone repo
