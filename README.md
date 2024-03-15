@@ -29,10 +29,13 @@ jQuery dependency already comes with the repository (in `./public` folder).
 # Clone repo
 git clone https://github.com/ExploraMDBR/next-stop.git
 
-# Run the installation script. Be sure to have internet access  
-install.sh
+# Install explora.hat
+pip install -i https://test.pypi.org/simple/ explora-hat --extra-index-url https://pypi.org/simple
 
-# The script will return a random generated password for the DB, copy it and paste it in "./database_manager.py"
+# Start local server
+python3 treno_controller.py # prints localhost:8080 to console (port number is randomly generated each launch)
+
+# The application is now running and can be accessed at localhost:8080
 ```
 
 
