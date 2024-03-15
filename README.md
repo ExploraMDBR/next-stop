@@ -27,9 +27,6 @@ jQuery dependency already comes with the repository (in `./public` folder). Just
 # Clone repo
 git clone https://github.com/ExploraMDBR/next-stop.git
 
-# Install explora.display
-pip install -i https://test.pypi.org/simple/ explora-display --extra-index-url https://pypi.org/simple
-
 # Start local server
 python3 treno_controller.py # prints localhost:8080 to console (port number is randomly generated each launch)
 
