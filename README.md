@@ -17,7 +17,25 @@ The displays feature both video (pre-rendered or a camera output) and images.
 
 
 ## <a name="development"></a>Development
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+
+### Dependencies:
+- [explora.display](https://github.com/ExploraMDBR/explora-display)
+- [jQuery](https://github.com/jquery/jquery) 
+  
+jQuery dependency already comes with the repository (in `./public` folder). Just clone it and run `main.py` :
+
+```bash
+# Clone repo
+git clone https://github.com/ExploraMDBR/next-stop.git
+
+# Install explora.display
+pip install -i https://test.pypi.org/simple/ explora-display --extra-index-url https://pypi.org/simple
+
+# Start local server
+python3 main.py # prints localhost:8080 to console (port number is randomly generated each launch)
+
+# The application is now running and can be accessed at localhost:8080
+```
 
 
 ## <a name="infos"></a>Project additional infos
