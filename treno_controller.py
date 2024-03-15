@@ -1,4 +1,5 @@
-from explora_hat import gpio_manager, display_server
+from explora.hat import gpio_manager
+from explora.display import display_server
 
 import threading
 from time import sleep, time
@@ -139,7 +140,7 @@ def move_state(num, the_led):
 
 
 if __name__ == '__main__':
-	display_server.start()
+	display_server.main(_static_dir=("/", "./public"))
 	watchdog_thread.start()
 
 	for i in range(7):
