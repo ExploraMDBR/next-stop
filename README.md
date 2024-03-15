@@ -2,6 +2,7 @@
 <img width="200" alt="project logo" src="images/logo.png">
 
 [![ExploraBadge](https://img.shields.io/badge/-Explora-eb5c2f)](https://mdbr.it/en/) [![Interactive](https://img.shields.io/badge/-Interactive_installation-55ca7c)](https://en.wikipedia.org/wiki/Interactive_art)
+[![ExploraHat](https://img.shields.io/badge/-Explora_hat-d80000)](https://github.com/ExploraMDBR/explora-hat)
 
 *Next stop explora* is a an application that emulates some of the functioning of a train cockpit throug a simplified console and simplified outputs.
 
