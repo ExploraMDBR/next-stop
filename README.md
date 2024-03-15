@@ -19,7 +19,6 @@ The displays feature both video (pre-rendered or a camera output) and images.
 ## <a name="development"></a>Development
 
 ### Dependencies:
-- [explora.display](https://github.com/ExploraMDBR/explora-display)
 - [jQuery](https://github.com/jquery/jquery) 
   
 jQuery dependency already comes with the repository (in `./public` folder). Just clone it and run `main.py` :
