@@ -4,15 +4,15 @@
 [![ExploraBadge](https://img.shields.io/badge/-Explora-eb5c2f)](https://mdbr.it/en/) [![Interactive](https://img.shields.io/badge/-Interactive_installation-55ca7c)](https://en.wikipedia.org/wiki/Interactive_art)
 [![ExploraHat](https://img.shields.io/badge/-Explora_hat-d80000)](https://github.com/ExploraMDBR/explora-hat)
 
-*Next stop explora* is a an application that emulates some of the functioning of a train cockpit throug a simplified console and simplified outputs.
+*Next stop explora* is an application that emulates some of the functioning of a train cockpit through a simplified console and simplified outputs.
 
 - [Introduction](#introduction)
 - [Development](#development)
-- [Project additional infos](#infos)
+- [Project additional info](#infos)
 
 
 ## <a name="introduction"></a>Introduction
-*Next stop* features a physical console that relies on **buttons** and **magnetic sensors** for users inputs and **displays and led strips as output**. The buttons and the sensors on the console are associated to typical actions to be performed as a train driver and influences what happens in the display and the leds behaviour.
+*Next stop* features a physical console that relies on **buttons** and **magnetic sensors** for users inputs that generates events on **displays and LEDs strips**. The buttons and the sensors on the console are associated to typical actions to be performed as a train driver and influences what happens in the display and the LEDs behavior.
 The displays feature both video (pre-rendered or a camera output) and images.
 
 
@@ -22,7 +22,8 @@ The displays feature both video (pre-rendered or a camera output) and images.
 - [jQuery](https://github.com/jquery/jquery)
 - [legacy-display-server](https://github.com/ExploraMDBR/legacy-display-server)
 - [explora.hat](https://github.com/ExploraMDBR/explora-hat)
-  
+  
+
 jQuery dependency already comes with the repository (in `./public` folder).
 
 ```bash
@@ -39,13 +40,13 @@ python3 treno_controller.py # prints localhost:8080 to console (port number is r
 ```
 
 
-## <a name="infos"></a>Project additional infos
+## <a name="infos"></a>Project additional info
 
 ### Project purpose
 *Next stop* is designed to be an installation. A full size train cockpit features a display and a basic console.
- 
+ 
 **Two versions** of the installation have been presented: 
-- The first one was displaying a video recorded in real time by a camera placed on topo of small toy train controlled through a reley and activated during “Running” state. The train rails were installed above the installation
+- The first one was displaying a video recorded in real time by a camera placed on top of a small toy train controlled through a relay and activated during “Running” state. The train rails were installed above the installation
 area, being visible from all the visitors.
 - The second relied on a pre rendered video paused and played accordingly with application states.
 
